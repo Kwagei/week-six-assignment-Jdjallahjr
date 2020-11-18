@@ -1,6 +1,12 @@
+body{
+    background-color: black;
+}
 #parent-container{
-    width: 100%;
+    width: 50%;
+    height: 600px;
+    margin: auto;
     text-align: center;
+    background-color: yellow;
 }
 
 #container{
@@ -17,6 +23,21 @@
     border: 3px solid black;
 }
 
-#box:hover{
-    background-color: lightcyan;
+.playing-btn{
+    width: 100%;
+}
+
+.home-btn{
+    color: yellow;
+    background-color: black;
+}
+
+.home-link{
+    text-decoration: none;
+    color: yellow;
+}
+
+.restart-btn{
+    color: yellow;
+    background-color: black;
 }

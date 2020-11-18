@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+}
+
+.mother{
+    display: grid;
+    grid-template-rows: 40% 25% 15%;
+    width: 50%;
+    height: 585px;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+}
+.instruction{
+    margin: auto;
+    width: 50%;
+}
+
+.levels{
+    color: yellow;
+    background-color: black;
+    padding-bottom: 1%;
+    margin: auto;
+}
+
+#myLevels{
+    color: black;
+    background-color: yellow;
+    /* margin-top: 5%; */
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.side-btn{
+    margin-top: 1%;
+    width: 100%;   
+}
+.btn1{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 10%;
+    background-color: black;
+    color: red;
+    padding: 5%;
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+}
+
+.btn2{
+    font-size: 50px;
+    margin: auto;
+    background-color: black;
+    color: yellow;
+    padding: 5%;
+}
