@@ -6,7 +6,7 @@ body{
     display: grid;
     grid-template-rows: 40% 25% 15%;
     width: 50%;
-    height: 585px;
+    height: 615px;
     margin: auto;
     text-align: center;
     background-color: yellow;
@@ -17,23 +17,23 @@ body{
 }
 
 .levels{
+    height: 100px;
     color: yellow;
     background-color: black;
     padding-bottom: 1%;
     margin: auto;
+    margin-top: -5%;
 }
 
 #myLevels{
-    color: black;
     background-color: yellow;
-    /* margin-top: 5%; */
     padding: 10px;
     padding-left: 100px;
     padding-right: 100px;
 }
 
 .side-btn{
-    margin-top: 1%;
+    margin-top: -5%;
     width: 100%;   
 }
 .btn1{

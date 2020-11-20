@@ -3,7 +3,8 @@ Array.from(cells).forEach(function(cells){
     cells.addEventListener("click", function(help){
         cells.innerHTML="X";
         const a = Math.floor(Math.random()*8)+0;
-
+    
+    function helpMe(){
         if (a == 0){
             const box1 = document.getElementById("box1");
             if(box1.innerHTML === "X"){
@@ -148,9 +149,54 @@ Array.from(cells).forEach(function(cells){
         }else if(box9.innerHTML === "X" && box7.innerHTML === "X"){
                 box8.innerHTML = "O";
         }
-        if(box9.innerHTML === "X" &&  box3.innerHTML === "X"){
+        else if(box9.innerHTML === "X" &&  box3.innerHTML === "X"){
             box6.innerHTML = "O";
         }
+    }
+    helpMe();
+
+        if (a == 4){
+            const box5 = document.getElementById("box5");
+            if(box5.innerHTML === "X"){
+                alert("seleted");
+                box5.innerHTML = "X";
+            }
+        }else if(box5.innerHTML == "X"){
+            box3.innerHTML = "O";
+        }else{
+            helpMe();
+        }
+
+
+
+        function winning(){
+            if (box1.innerHTML === "O" && box2.innerHTML === "O" && box3.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box1.innerHTML === "O" && box4.innerHTML === "O" && box7.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box1.innerHTML === "O" && box5.innerHTML === "O" && box9.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box2.innerHTML === "O" && box5.innerHTML === "O" && box8.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box3.innerHTML === "O" && box6.innerHTML === "O" && box9.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box3.innerHTML === "O" && box5.innerHTML === "O" && box7.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box4.innerHTML === "O" && box5.innerHTML === "O" && box6.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+            else if (box7.innerHTML === "O" && box8.innerHTML === "O" && box9.innerHTML === "O"){
+                document.getElementById("condition").innerHTML = "Player O Wins!";
+            }
+        }
+        winning();
+
 
         
 

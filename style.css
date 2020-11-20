@@ -9,6 +9,22 @@ body{
     background-color: yellow;
 }
 
+.player1{
+    /* text-align: left; */
+    width: 30%;
+}
+
+.player2{
+    float: right;
+    /* text-align: left; */
+    margin-top: -8%;
+    width: 30%;
+}
+
+.cells:hover{
+    background-color: lightgray;
+}
+
 #container{
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -21,6 +37,7 @@ body{
     height: 100px;
     font-size: 100px;
     border: 3px solid black;
+    background-color: chocolate;
 }
 
 .playing-btn{
@@ -28,16 +45,41 @@ body{
 }
 
 .home-btn{
+    margin-top: 2%;
+    padding: 20px;
     color: yellow;
     background-color: black;
 }
+
+.home-btn:hover{
+    background-color: lightgray;
+}
+
 
 .home-link{
     text-decoration: none;
     color: yellow;
 }
 
+.home-link:hover{
+    color: black;
+}
+
 .restart-btn{
-    color: yellow;
     background-color: black;
+    margin-top: 2%;
+    padding: 20px;
+}
+
+.restart-btn:hover{
+    background-color: lightgray;
+}
+
+.restart-link{
+    text-decoration: none;
+    color: yellow;
+}
+
+.restart-link:hover{
+    color: black;
 }

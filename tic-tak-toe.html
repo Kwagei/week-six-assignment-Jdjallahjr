@@ -8,8 +8,17 @@
     <link rel="stylesheet" href="home-page.html">
 </head>
 <body>
-    <div id="parent-container">
+    <div class="game-container" id="parent-container">
         <h1>Tic Tac Toe</h1>
+        <div class="turns">
+            <div class="player1">
+                <p>Player 1:</p>
+            </div>
+            <div class="player2">
+                <p>Player 2:</p>
+            </div>
+        </div>
+       
         <div id="container">
             <div class="cells" id="box1"></div>
             <div class="cells" id="box2"></div>
@@ -28,7 +37,12 @@
                 </button>
             </div>
             <div class="restart">
-                <button class="restart-btn">Restart Game</button>
+                <button class="restart-btn">
+                    <a class="restart-link" href="tic-tak-toe.html">Restart Game</a>
+                </button>
+            </div>
+            <div class="winning-statement">
+                <p id="condition" ></p>
             </div>
         </div>
     </div>
