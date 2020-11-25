@@ -1,4 +1,19 @@
 const cells = document.querySelectorAll(".cells");
+// var humman;
+// var computer;
+// function selectPlayer(event){
+//     i.addEventListener("click", function(){
+//         let i = event.target.getElementById("linked");
+//     if (i === "X"){
+//         human = i;
+//         computer = "O";
+//     }else{
+//         human = "O";
+//         computer = "X"
+//     }      
+//     })   
+// }
+
 Array.from(cells).forEach(function(cells){
     cells.addEventListener("click", function(help){
         cells.innerHTML="X";
@@ -8,7 +23,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 0){
             const box1 = document.getElementById("box1");
             if(box1.innerHTML === "X"){
-                alert("seleted");
                 box1.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -30,7 +44,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 1){
             const box2 = document.getElementById("box2");
             if(box2.innerHTML === "X"){
-                alert("seleted");
                 box2.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -49,7 +62,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 2){
             const box3 = document.getElementById("box3");
             if(box3.innerHTML === "X"){
-                alert("seleted");
                 box3.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -71,7 +83,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 3){
             const box4 = document.getElementById("box4");
             if(box4.innerHTML === "X"){
-                alert("seleted");
                 box4.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -85,7 +96,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 5){
             const box6 = document.getElementById("box6");
             if(box6.innerHTML === "X"){
-                alert("seleted");
                 box6.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -99,7 +109,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 6){
             const box7 = document.getElementById("box7");
             if(box7.innerHTML === "X"){
-                alert("seleted");
                 box7.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -118,7 +127,6 @@ Array.from(cells).forEach(function(cells){
         if (a == 7){
             const box8 = document.getElementById("box8");
             if(box8.innerHTML === "X"){
-                alert("seleted");
                 box8.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -132,12 +140,13 @@ Array.from(cells).forEach(function(cells){
             box9.innerHTML = "O";
         }else if(box8.innerHTML === "X" && box9.innerHTML === "X"){
                 box7.innerHTML = "O";
+        }else if(box8.innerHTML === "X" && box2.innerHTML === "X"){
+            box4.innerHTML = "O";
         }
         
         if (a == 8){
             const box9 = document.getElementById("box9");
             if(box9.innerHTML === "X"){
-                alert("seleted");
                 box9.innerHTML = "X";
             }
         }else if(box5.innerHTML == ""){
@@ -158,17 +167,14 @@ Array.from(cells).forEach(function(cells){
         if (a == 4){
             const box5 = document.getElementById("box5");
             if(box5.innerHTML === "X"){
-                alert("seleted");
                 box5.innerHTML = "X";
             }
         }else if(box5.innerHTML == "X"){
             box3.innerHTML = "O";
-        }else{
+        }
+        else{
             helpMe();
         }
-
-
-
         function winning(){
             if (box1.innerHTML === "O" && box2.innerHTML === "O" && box3.innerHTML === "O"){
                 document.getElementById("condition").innerHTML = "Player O Wins!";
@@ -197,6 +203,15 @@ Array.from(cells).forEach(function(cells){
         }
         winning();
 
+        function tie(){
+            if (box1.innerHTML !== "" && box2.innerHTML !== "" && box3.innerHTML !== "" && box4.innerHTML !== "" && box5.innerHTML !== "" && box6.innerHTML !== "" && box7.innerHTML !== "" && box8.innerHTML !== "" && box9.innerHTML !== ""){
+                document.getElementById("condition").innerHTML = "Game Draw!";
+            }
+        }
+        tie();
+        
+
+        
 
         
 
@@ -300,7 +315,9 @@ Array.from(cells).forEach(function(cells){
         //         box8.innerHTML = "O";
         //     }
         // }
+    
     })
+
 })
 
 
