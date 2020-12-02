@@ -1,4 +1,7 @@
 const cells = document.querySelectorAll(".cells");
+var score = 0;
+player2inn.innerHTML = "Player 2: " + score;
+player1inn.innerHTML = "Player 1: " + 0;
 // var humman;
 // var computer;
 // function selectPlayer(event){
@@ -177,27 +180,43 @@ Array.from(cells).forEach(function(cells){
         }
         function winning(){
             if (box1.innerHTML === "O" && box2.innerHTML === "O" && box3.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box1.innerHTML === "O" && box4.innerHTML === "O" && box7.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box1.innerHTML === "O" && box5.innerHTML === "O" && box9.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box2.innerHTML === "O" && box5.innerHTML === "O" && box8.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box3.innerHTML === "O" && box6.innerHTML === "O" && box9.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box3.innerHTML === "O" && box5.innerHTML === "O" && box7.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box4.innerHTML === "O" && box5.innerHTML === "O" && box6.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
             else if (box7.innerHTML === "O" && box8.innerHTML === "O" && box9.innerHTML === "O"){
+                score++;
+                player2inn.innerHTML = "Player 2: " + score;
                 document.getElementById("condition").innerHTML = "Player O Wins!";
             }
         }
@@ -209,8 +228,22 @@ Array.from(cells).forEach(function(cells){
             }
         }
         tie();
-        
 
+    })
+
+})
+        function myRefresh(){
+            document.getElementById("box1").innerHTML = "";
+            document.getElementById("box2").innerHTML = "";
+            document.getElementById("box3").innerHTML = "";
+            document.getElementById("box4").innerHTML = "";
+            document.getElementById("box5").innerHTML = "";
+            document.getElementById("box6").innerHTML = "";
+            document.getElementById("box7").innerHTML = "";
+            document.getElementById("box8").innerHTML = "";
+            document.getElementById("box9").innerHTML = "";
+            document.getElementById("condition").innerHTML = "";
+        }       
         
 
         
@@ -316,9 +349,7 @@ Array.from(cells).forEach(function(cells){
         //     }
         // }
     
-    })
 
-})
 
 
 

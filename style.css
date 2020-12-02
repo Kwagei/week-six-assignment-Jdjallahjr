@@ -3,7 +3,7 @@ body{
 }
 #parent-container{
     width: 50%;
-    height: 600px;
+    height: 630px;
     margin: auto;
     text-align: center;
     background-color: yellow;
@@ -40,12 +40,23 @@ body{
     background-color: chocolate;
 }
 
+#refresh{
+    margin-top: 1%;
+    padding: 5px;
+    color: yellow;
+    background-color: black;
+}
+
+#refresh:hover{
+    background-color: lightgray;
+}
+
 .playing-btn{
     width: 100%;
 }
 
 .home-btn{
-    margin-top: 2%;
+    margin-top: 1%;
     padding: 20px;
     color: yellow;
     background-color: black;
@@ -67,7 +78,7 @@ body{
 
 .restart-btn{
     background-color: black;
-    margin-top: 2%;
+    margin-top: 1%;
     padding: 20px;
 }
 
