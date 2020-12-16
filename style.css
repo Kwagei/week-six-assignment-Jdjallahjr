@@ -1,12 +1,108 @@
 body{
     background-color: black;
 }
+
+#big-mother{
+    display: grid;
+    width: 50%;
+    height: 645px;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+}
+
+.choose-btn{
+    width: 100%;
+    margin-top: 5%;
+}
+
+#rudeen1{
+    margin-top: 10%;
+}
+
+#oneplayer-btn{
+    width: 30%;
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+}
+
+#twoplayer-btn{
+    width: 30%;
+    background-color: black;
+    color: yellow;
+    padding: 30px;
+}
+
+#mother{
+    display: none;
+    grid-template-rows: 40% 25% 15%;
+    width: 50%;
+    height: 645px;
+    margin: auto;
+    text-align: center;
+    background-color: yellow;
+}
+.instruction{
+    margin: auto;
+    width: 50%;
+}
+
+.levels{
+    height: 75px;
+    color: yellow;
+    background-color: black;
+    padding-bottom: 1%;
+    margin: auto;
+    margin-top: -2%;
+}
+
+#myLevels{
+    background-color: yellow;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.side-btn{
+    margin-top: -5%;
+    width: 100%;   
+}
+.btn1{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 10%;
+    background-color: black;
+    color: red;
+    padding: 5%;
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+}
+
+.btn2{
+    font-size: 50px;
+    margin: auto;
+    background-color: black;
+    color: yellow;
+    padding: 5%;
+}
+
+
+/* game board CSS */
 #parent-container{
     width: 50%;
     height: 630px;
     margin: auto;
     text-align: center;
     background-color: yellow;
+    display: none;
+}
+
+.turns{
+    width: 100%;
 }
 
 .player1{
@@ -40,57 +136,36 @@ body{
     background-color: chocolate;
 }
 
+.playing-btn{
+    width: 100%;
+    margin-top: 10%;
+}
+
 #refresh{
-    margin-top: 1%;
-    padding: 5px;
-    color: yellow;
     background-color: black;
+    color: yellow;
+    margin-top: 1%;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: -2%;
 }
 
 #refresh:hover{
     background-color: lightgray;
-}
-
-.playing-btn{
-    width: 100%;
-}
-
-.home-btn{
-    margin-top: 1%;
-    padding: 20px;
-    color: yellow;
-    background-color: black;
-}
-
-.home-btn:hover{
-    background-color: lightgray;
-}
-
-
-.home-link{
-    text-decoration: none;
-    color: yellow;
-}
-
-.home-link:hover{
     color: black;
 }
 
 .restart-btn{
     background-color: black;
+    color: yellow;
     margin-top: 1%;
     padding: 20px;
+    margin-left: 9%;
 }
 
 .restart-btn:hover{
     background-color: lightgray;
-}
-
-.restart-link{
-    text-decoration: none;
-    color: yellow;
-}
-
-.restart-link:hover{
     color: black;
 }
+

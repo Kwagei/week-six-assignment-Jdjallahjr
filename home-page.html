@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home-page.css">
-    <link rel="stylesheet" href="tic-tak-toe.html">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="tic-tak-toe.html"> -->
 </head>
 <body>
-    <div class="mother">
+    <div id="big-mother">
+        <h1 id="rudeen">Welcome to Dorbor's Tic Tac Toe</h1>
+        <h1 id="rudeen1">How do you want to play?</h1>
+        <div class="choose-btn">
+            <button onclick="openGame(event)" id="oneplayer-btn" >One Player</button> 
+            <button onclick="openGame(event)" id="twoplayer-btn" >Two Players</button>
+        </div>
+    </div>
+
+    <!-- selecting sides -->
+    <div id="mother">
         <div class="instruction">
             <h1>Instruction</h1>
             <p>
@@ -28,13 +38,41 @@
         </div>
         <div class="side-btn">
             <h1>Choose a side</h1>
-            <button class="btn1">
-                <a id="linked"class="link" href="tic-tak-toe.html">X</a>
-            </button> 
-            <button class="btn2">
-                <a id="linked" class="link" href="tic-tak-toe.html">O</a>
-            </button>
+            <button id="playerX" class="btn1" onclick="playerSelection(event)">X</button> 
+            <button id="playerO" class="btn2" onclick="playerSelection(event)">O</button>
         </div>
     </div>
+    <!-- ihkhriufsdfhdu8i -->
+    <div class="game-container" id="parent-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="turns">
+            <div class="player1">
+                <p id="player1inn"></p>
+            </div>
+            <div class="player2">
+                <p id="player2inn"></p>
+            </div>
+        </div>
+        <div class="winning-statement">
+            <p id="condition" ></p>
+        </div>
+        <div id="container">
+            <div class="cells" id="box1"></div>
+            <div class="cells" id="box2"></div>
+            <div class="cells" id="box3"></div>
+            <div class="cells" id="box4"></div>
+            <div class="cells" id="box5"></div>
+            <div class="cells" id="box6"></div>
+            <div class="cells" id="box7"></div>
+            <div class="cells" id="box8"></div>
+            <div class="cells" id="box9"></div>
+        </div>
+        <div class="playing-btn">
+            <button id="refresh" onclick="playAgain()">Play Again</button> 
+            <button onclick="restartGame()" class="restart-btn">Restart Game</button>
+        </div>
+            <!-- winnning condition -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
