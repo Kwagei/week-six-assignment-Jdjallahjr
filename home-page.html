@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="tic-tak-toe.html"> -->
+</head>
+<body>
+    <div id="big-mother">
+        <h1 id="rudeen">Welcome to Dorbor's Tic Tac Toe</h1>
+        <h1 id="rudeen1">How do you want to play?</h1>
+        <div class="choose-btn">
+            <button onclick="openGame(event)" id="oneplayer-btn" >One Player</button> 
+            <button onclick="openGame(event)" id="twoplayer-btn" >Two Players</button>
+        </div>
+    </div>
+
+    <!-- selecting sides -->
+    <div id="mother">
+        <div class="instruction">
+            <h1>Instruction</h1>
+            <p>
+                You are about to play a computer. Please be mindful and play smart.
+                You have the advantage of picking a side and playing first. 
+                It is still very important to play smart. For every three rows, 
+                colums or diagonals that are the same, the game returns a win for that play, else a tie.
+            </p>
+        </div>
+        <div class="levels">
+            <h1>Levels</h1>
+            <select name="items" id="myLevels">
+                <option value="1">EASY</option>
+                <option value="2">MEDIUM</option>
+                <option value="3">HARD</option>
+            </select>
+        </div>
+        <div class="side-btn">
+            <h1>Choose a side</h1>
+            <button id="playerX" class="btn1" onclick="playerSelection(event)">X</button> 
+            <button id="playerO" class="btn2" onclick="playerSelection(event)">O</button>
+        </div>
+    </div>
+    <!-- ihkhriufsdfhdu8i -->
+    <div class="game-container" id="parent-container">
+        <h1>Tic Tac Toe</h1>
+        <div class="turns">
+            <div class="player1">
+                <p id="player1inn"></p>
+            </div>
+            <div class="player2">
+                <p id="player2inn"></p>
+            </div>
+        </div>
+        <div class="winning-statement">
+            <p id="condition" ></p>
+        </div>
+        <div id="container">
+            <div class="cells" id="box1"></div>
+            <div class="cells" id="box2"></div>
+            <div class="cells" id="box3"></div>
+            <div class="cells" id="box4"></div>
+            <div class="cells" id="box5"></div>
+            <div class="cells" id="box6"></div>
+            <div class="cells" id="box7"></div>
+            <div class="cells" id="box8"></div>
+            <div class="cells" id="box9"></div>
+        </div>
+        <div class="playing-btn">
+            <button id="refresh" onclick="playAgain()">Play Again</button> 
+            <button onclick="restartGame()" class="restart-btn">Restart Game</button>
+        </div>
+            <!-- winnning condition -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
